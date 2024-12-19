@@ -1,0 +1,146 @@
+@font-face {
+    font-family: 'hebrew-handy-font'; 
+    src: url('resources/fonts/hebrew-handy-font.otf') format('opentype'); 
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: whites;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'hebrew-handy-font', sans-serif;
+}
+
+.background-container {
+    display: flex;
+    flex-direction: column;
+    position: relative; 
+    align-items: center;
+    height: 100vh; 
+    width: 50vh;
+    background-image: url('resources/images/open-pic.png'); 
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat; 
+    color: white; 
+    text-align: center; 
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 5vh;
+    color: darkred;
+}
+
+h2 {
+    font-size: 2.5vh;
+    color: darkred;
+}
+
+button {
+    border: darkred 0.5vh solid;
+    border-radius: 20vh;
+    background-color:lightgray;
+    color: darkred;
+    font-size: 2.2vh;
+    width: 30vh;
+    height: 7vh;
+}
+
+button:hover {
+    background-color:darkgray;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start;
+    padding-left: 0;
+    margin-left: 8%;
+}
+
+li {
+    margin: 3% 0%; 
+    padding-left: 0%; 
+    text-align: right; 
+    font-size: 75%;  
+    color: black
+}
+
+li:hover {
+    cursor: pointer; 
+    color:darkgray; 
+}
+
+textarea {
+    background: transparent;
+    border: 0; 
+    width: 40%;
+    height: 20%;
+    margin-right: 4.8%;
+    margin-top: 35%;
+}
+
+textarea:focus {
+    border: 0;
+}
+
+.background-container input {
+    position: absolute; 
+    bottom: 27%; 
+    right: 28.35%; 
+    z-index: 1; 
+}
+
+.background-container ul {
+    position: absolute; 
+    top: 71%;
+    right: 19%; 
+    z-index: 1; 
+}
+
+#searchInput {
+    border: black 0vh solid;
+    border-radius: 0vh;
+    background-color:darkred;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5vh;
+    color: whitesmoke;
+    width: 22vh;
+    height: 2.4vh;
+}
+
+.icon-finger {
+    width: 7vh;
+    height: auto;
+}
+
+.profilePicture {
+    border-radius: 50%;  
+    border: 0.5vh solid darkred; 
+    width: 10vh; 
+    height: 10vh;  
+    object-fit: cover;
+    object-position: center;
+}
+
+@keyframes bounceLeft {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateX(0);
+    }
+    40% {
+        transform: translateX(10px); 
+    }
+    60% {
+        transform: translateX(5px); 
+    }
+}
+
+
