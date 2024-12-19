@@ -1,6 +1,6 @@
 const sheetId = "1d5pu4202nJhalDYrmrlgaLA7mPWKZ7At-tY0mYosRnk"
 const apiKey = "AIzaSyAvQDVEvgVkEZJcuymHXUOtwlMz_kDtKQc";
-const apiUrl = `https://sheets.googleapis.com/v4/spreadsheets/${sheetId}/values/Sheet1:append?valueInputOption=RAW&key=${apiKey}`;
+const apiUrl = `https://sheets.googleapis.com/v4/spreadsheets/${sheetId}/values/moms-birthday:append?valueInputOption=RAW&key=${apiKey}`;
 
 export function setBlessing(data) {
     fetch(apiUrl, {
